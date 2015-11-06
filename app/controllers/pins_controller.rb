@@ -1,28 +1,24 @@
 class PinsController < ApplicationController
   before_action :set_pin, only: [:show, :edit, :update, :destroy]
 
-  # GET /pins
-  # GET /pins.json
+  
   def index
     @pins = Pin.all
   end
 
-  # GET /pins/1
-  # GET /pins/1.json
+  
   def show
   end
 
-  # GET /pins/new
   def new
     @pin = Pin.new
   end
 
-  # GET /pins/1/edit
+
   def edit
   end
 
-  # POST /pins
-  # POST /pins.json
+  
   def create
     @pin = Pin.new(pin_params)
 
@@ -37,8 +33,7 @@ class PinsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /pins/1
-  # PATCH/PUT /pins/1.json
+
   def update
     respond_to do |format|
       if @pin.update(pin_params)
@@ -69,6 +64,6 @@ class PinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:desciption)
+      params.require(:pin).permit(:desciption, :image)
     end
 end
