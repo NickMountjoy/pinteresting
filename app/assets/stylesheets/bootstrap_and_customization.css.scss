@@ -4,12 +4,12 @@ $body-bg:						#3498db;
 $font-family-sans-serif: 		'Lato', 'Helvetica Neue' , Helvetica, Arial, sans-serif;
 $navbar-height:             	45px;
 $navbar-default-bg:				white;					 
-$navbar-default-brand-color:	black;
-$brand-primary:                 black;
+$navbar-default-brand-color:	red;
+$brand-primary:                 red;
 $jumbotron-bg:                  white;
 
 
-@import 'bootstrap-sprockets';
+@import "bootstrap-sprockets";
 @import 'bootstrap';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
